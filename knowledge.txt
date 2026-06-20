@@ -1,0 +1,46 @@
+Automotive AC Troubleshooting
+
+Problem:
+AC cooling weak during afternoon traffic but works at night.
+
+Possible causes:
+
+1. Condenser airflow problem
+Reason:
+During traffic, less airflow reaches the condenser.
+The AC loses cooling efficiency.
+
+Check:
+Inspect condenser fan operation.
+Check condenser blockage.
+
+Repair:
+Clean condenser.
+Repair cooling fan.
+
+
+2. Low refrigerant
+
+Reason:
+Low refrigerant reduces cooling capacity.
+
+Check:
+Measure AC pressure.
+
+Repair:
+Recharge refrigerant.
+
+
+Engine overheating
+
+Problem:
+Engine temperature increases after driving.
+
+Causes:
+Low coolant.
+Radiator blockage.
+Cooling fan failure.
+
+Checks:
+Inspect coolant level.
+Check radiator fan.
