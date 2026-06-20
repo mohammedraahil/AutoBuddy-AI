@@ -48,3 +48,6 @@ Diagnostic Report
 - FastAPI backend
 - Vehicle-specific diagnosis
 - OBD-II integration
+## Project Status
+
+RAG prototype completed.
