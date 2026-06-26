@@ -1,33 +1,35 @@
 import streamlit as st
-
-from rag import db
-
-
-st.title("AutoDiagnose AI 🚗")
+from diagnose import diagnose
 
 
-problem = st.text_input(
-"Describe vehicle problem"
+st.title("🚗 AutoBuddy AI")
+
+st.write(
+    "AI Automotive Troubleshooting Assistant"
 )
 
+
+problem = st.text_area(
+    "Describe your vehicle problem"
+)
 
 
 if st.button("Diagnose"):
 
+    if problem:
 
-    results=db.similarity_search(
-        problem,
-        k=3
-    )
+        with st.spinner("Analyzing problem..."):
 
-
-    st.subheader(
-    "Relevant Knowledge"
-    )
+            result = diagnose(problem)
 
 
-    for r in results:
+        st.subheader("Diagnostic Report")
 
-        st.write(
-        r.page_content
+        st.write(result)
+
+
+    else:
+
+        st.warning(
+            "Please enter a vehicle problem"
         )
