@@ -5,31 +5,86 @@ from diagnose import diagnose
 st.title("🚗 AutoBuddy AI")
 
 st.write(
-    "AI Automotive Troubleshooting Assistant"
+    "Intelligent Automotive Troubleshooting Assistant"
 )
 
 
+# Vehicle details
+
+st.subheader("Vehicle Information")
+
+
+make = st.text_input(
+    "Vehicle Make",
+    placeholder="Example: Honda"
+)
+
+
+model = st.text_input(
+    "Vehicle Model",
+    placeholder="Example: Brio"
+)
+
+
+year = st.text_input(
+    "Manufacturing Year",
+    placeholder="Example: 2018"
+)
+
+
+mileage = st.number_input(
+    "Mileage (km)",
+    min_value=0,
+    step=5000
+)
+
+
+
 problem = st.text_area(
-    "Describe your vehicle problem"
+    "Describe the problem",
+    placeholder="Example: AC cools at night but weak during afternoon traffic"
+)
+
+st.caption(
+    "Example: AC weak in traffic, engine overheating, strange noise while braking"
 )
 
 
 if st.button("Diagnose"):
 
+
     if problem:
 
-        with st.spinner("Analyzing problem..."):
 
-            result = diagnose(problem)
+        vehicle_info = f"""
+        Vehicle:
+        {make} {model}
+        Year:
+        {year}
+        Mileage:
+        {mileage}
+
+        Problem:
+        {problem}
+        """
 
 
-        st.subheader("Diagnostic Report")
+        with st.spinner(
+            "Analyzing vehicle problem..."
+        ):
 
-        st.write(result)
 
+            result = diagnose(
+                vehicle_info
+            )
+
+        st.subheader("🔍 Diagnostic Report")
+
+
+        st.markdown(result)
 
     else:
 
         st.warning(
-            "Please enter a vehicle problem"
+            "Please describe the problem"
         )

@@ -1,46 +1,191 @@
-Automotive AC Troubleshooting
+==================================================
+COMPONENT: Automotive Air Conditioning System
+==================================================
 
-Problem:
-AC cooling weak during afternoon traffic but works at night.
+Description:
+The vehicle AC system removes heat from cabin air using a compressor,
+condenser, expansion valve and evaporator.
 
-Possible causes:
+SYMPTOMS:
 
-1. Condenser airflow problem
-Reason:
-During traffic, less airflow reaches the condenser.
-The AC loses cooling efficiency.
+1. Weak cooling during afternoon but normal at night
 
-Check:
-Inspect condenser fan operation.
-Check condenser blockage.
+Possible Causes:
 
-Repair:
-Clean condenser.
-Repair cooling fan.
+Cause:
+Condenser airflow problem
 
+Explanation:
+The condenser releases heat from refrigerant. During high temperature
+conditions or slow traffic, reduced airflow can prevent proper heat
+dissipation and reduce cooling performance.
 
-2. Low refrigerant
+Diagnostic Checks:
+- Check condenser fan operation
+- Inspect condenser for dirt or blockage
+- Check airflow through condenser
 
-Reason:
-Low refrigerant reduces cooling capacity.
-
-Check:
-Measure AC pressure.
-
-Repair:
-Recharge refrigerant.
+Repair Suggestions:
+- Clean condenser surface
+- Repair faulty cooling fan
+- Remove airflow obstruction
 
 
-Engine overheating
+Cause:
+Low refrigerant level
 
-Problem:
-Engine temperature increases after driving.
+Explanation:
+Low refrigerant reduces the ability of the AC system to absorb heat.
 
-Causes:
-Low coolant.
-Radiator blockage.
-Cooling fan failure.
+Diagnostic Checks:
+- Measure refrigerant pressure
+- Check for refrigerant leaks
 
-Checks:
-Inspect coolant level.
-Check radiator fan.
+Repair Suggestions:
+- Repair leakage
+- Recharge refrigerant
+
+
+==================================================
+
+SYMPTOM:
+
+AC works while driving but becomes weak when stopped
+
+Possible Causes:
+
+Cause:
+Cooling fan failure
+
+Explanation:
+At higher speeds outside airflow cools the condenser. At idle,
+the electric fan is required. A failed fan reduces condenser cooling.
+
+Diagnostic Checks:
+- Turn AC on and check fan operation
+- Inspect fan fuse and relay
+
+Repair Suggestions:
+- Replace faulty fan
+- Repair electrical connection
+
+
+==================================================
+COMPONENT: Engine Starting System
+==================================================
+
+Description:
+The starting system includes battery, starter motor and ignition system.
+
+SYMPTOM:
+
+Vehicle does not start
+
+Possible Causes:
+
+Cause:
+Weak battery
+
+Explanation:
+A low battery cannot provide enough current to turn the starter motor.
+
+Diagnostic Checks:
+- Check battery voltage
+- Check battery terminals
+- Try jump starting
+
+Repair Suggestions:
+- Charge battery
+- Replace battery if damaged
+
+
+Cause:
+Starter motor problem
+
+Explanation:
+The starter motor may fail to rotate the engine.
+
+Diagnostic Checks:
+- Listen for clicking sound
+- Check starter connections
+
+Repair Suggestions:
+- Repair or replace starter motor
+
+
+==================================================
+COMPONENT: Engine Overheating System
+==================================================
+
+SYMPTOM:
+
+Engine temperature increases in traffic
+
+Possible Causes:
+
+Cause:
+Cooling fan failure
+
+Explanation:
+During slow traffic, the radiator requires the cooling fan
+to maintain airflow.
+
+Diagnostic Checks:
+- Check radiator fan operation
+- Check coolant temperature sensor
+
+Repair Suggestions:
+- Repair fan system
+
+
+Cause:
+Low coolant level
+
+Explanation:
+Insufficient coolant reduces heat transfer from engine.
+
+Diagnostic Checks:
+- Check coolant reservoir level
+- Inspect coolant leakage
+
+Repair Suggestions:
+- Fix leaks
+- Refill coolant
+
+
+==================================================
+COMPONENT: Battery and Electrical System
+==================================================
+
+SYMPTOM:
+
+Electrical components weak or vehicle battery dies
+
+Possible Causes:
+
+Cause:
+Old battery
+
+Explanation:
+Battery capacity decreases with age.
+
+Diagnostic Checks:
+- Measure battery voltage
+- Perform battery load test
+
+Repair Suggestions:
+- Replace battery
+
+
+Cause:
+Alternator charging issue
+
+Explanation:
+Alternator maintains battery charge while engine runs.
+
+Diagnostic Checks:
+- Measure charging voltage
+- Inspect alternator belt
+
+Repair Suggestions:
+- Repair alternator

@@ -5,13 +5,18 @@ from prompt import PROMPT
 
 def diagnose(problem):
 
-    context = retrieve_context(problem)
+    context, confidence = retrieve_context(problem)
 
 
     final_prompt = PROMPT.format(
-        problem=problem,
-        context=context
-    )
+    problem=problem,
+    context=context + f"""
+
+Retrieval confidence:
+{confidence}%
+
+"""
+)
 
 
     response = llm.invoke(final_prompt)
