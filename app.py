@@ -78,10 +78,46 @@ if st.button("Diagnose"):
                 vehicle_info
             )
 
-        st.subheader("🔍 Diagnostic Report")
+        st.subheader(
+            "🔍 Diagnostic Report"
+        )
+
+        st.write(
+            result["diagnosis"]
+        )
+        
+        
+        st.subheader(
+            "❓ Diagnostic Questions"
+        )
+        
+        st.write(
+            result["questions"]
+        )
+        
+        
+        st.subheader(
+            "Confidence"
+        )
+        
+        confidence = result["confidence"]
 
 
-        st.markdown(result)
+        if confidence >= 75:
+        
+            level = "High"
+
+        elif confidence >= 50:
+        
+            level = "Medium"
+
+        else:
+        
+            level = "Low"
+
+        st.write(
+            f"{confidence}% ({level})"
+        )
 
     else:
 

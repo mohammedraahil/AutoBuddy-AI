@@ -17,26 +17,54 @@ Retrieved automotive knowledge:
 
 Create a structured report:
 
+
 ## Problem Summary
+
 Explain the issue briefly.
 
+
 ## Possible Causes
+
 List causes ranked by likelihood.
 
 For each cause include:
+
 - Why it matches
-- Probability
+
 
 ## Diagnostic Checks
+
 Give practical inspection steps.
 
+
 ## Repair Suggestions
+
 Give maintenance or repair recommendations.
 
-## Confidence Score
-Give a confidence percentage and explain why.
 
 Use only the provided knowledge.
-Avoid making unsupported claims.
+Avoid unsupported claims.
+
+"""
+QUESTION_PROMPT = """
+
+You are AutoBuddy AI.
+
+Based on this vehicle problem:
+
+{problem}
+
+
+Retrieved knowledge:
+
+{context}
+
+
+Generate 3 useful diagnostic questions
+that a mechanic would ask before repairing the vehicle.
+
+Questions should help identify the most likely cause.
+
+Return only the questions.
 
 """
